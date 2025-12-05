@@ -2,6 +2,7 @@ import LikeButton from "./components/like-button";
 import Counter from "./components/counter";
 import ClickablePicture from "./components/clickable-picture";
 import Dice from "./components/dice";
+import DiscoButton from "./components/disco-button";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Counter />
           <ClickablePicture />
           <Dice />
+          <DiscoButton />
         </div>
       </div>
     </div>

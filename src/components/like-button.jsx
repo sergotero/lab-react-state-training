@@ -1,13 +1,21 @@
 import { useState } from "react";
 
-function LikeButton(){
+function LikeButton({ colors }){
   
-  const [likes, setLikes] = useState(0);
 
-  const updatesLikes = () => {setLikes(likes + 1)}
+  const [likes, setLikes] = useState(0);
+  const [bgColor, setBg] = useState("purple")
+
+  const updatesLikes = () => {
+    setLikes(likes + 1)
+    if (colors) {
+      const randomColor = Math.floor(Math.random() * colors.length);
+      setBg(colors[randomColor]);
+    }
+  }
 
   return(
-    <button className="btn bg-dark text-light m-2" type="button" onClick={updatesLikes}>{`${likes} Likes`}</button>
+    <button className="btn text-light m-2" type="button" style={{background: bgColor}} onClick={updatesLikes}>{`${likes} Likes`}</button>
   );
 }
 
