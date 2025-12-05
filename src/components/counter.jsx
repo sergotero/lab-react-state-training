@@ -17,7 +17,7 @@ function Counter(){
     }
   }
   return (
-    <div className="d-flex align-items-center p-3 m-2 border border-primary">
+    <div className="d-flex align-items-center justify-content-center p-3 m-2 border border-primary">
       <button className="btn bg-primary text-light" onClick={() => updateNumber("-")} type="button">-</button>
       <div className="d-flex align-items-center justify-content-center ms-2 me-2">
         <p className="m-0">{number}</p>
