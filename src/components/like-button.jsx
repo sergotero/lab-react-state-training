@@ -7,7 +7,7 @@ function LikeButton(){
   const updatesLikes = () => {setLikes(likes + 1)}
 
   return(
-    <button className="button bg-dark text-light" type="button" onClick={updatesLikes}>{`${likes} Likes`}</button>
+    <button className="btn bg-dark text-light m-2" type="button" onClick={updatesLikes}>{`${likes} Likes`}</button>
   );
 }
 
