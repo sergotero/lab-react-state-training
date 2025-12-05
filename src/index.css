@@ -12,6 +12,6 @@ code {
     monospace;
 }
 
-.ClickablePicture>img{
+img{
   max-width: 150px;
 }
